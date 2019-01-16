@@ -1,0 +1,12 @@
+create table vmdmanagerjoin(
+	id			varchar2(20),
+	password	varchar2(20) not null,
+    name        varchar2(50),
+    position  varchar2(20),
+    phonenumber varchar2(13),
+	primary key(id)
+);
+
+create sequence vmdmanager_seq
+start with 1
+increment by 1;	

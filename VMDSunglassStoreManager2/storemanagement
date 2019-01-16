@@ -1,0 +1,20 @@
+create table storemanagement(
+	s_number number(10) unique,
+	s_DepartmentClassification varchar2(20) not null,
+	s_DepartmentClassification2 varchar2(20),
+	s_BrandName varchar2(50) not null,
+	s_StoreName varchar2(20) primary key not null,
+	s_StoreLocation varchar2(20) not null,
+	s_LocationDate date not null,
+	s_WithdrawalDate date not null,
+	s_Material varchar2(20) not null,
+	s_VisualSize varchar2(20) not null,
+	s_VideoStatus varchar2(10) not null,
+	s_CompanyName varchar2(50) not null,
+	s_ConstructionAmount varchar2(50) not null,
+	imageView varchar2(50) not null
+);	
+
+create sequence storemanagement_seq
+start with 1
+increment by 1;	

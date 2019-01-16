@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.beans.*?> 
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+
+<AnchorPane prefHeight="684" prefWidth="1100"
+	xmlns:fx="http://javafx.com/fxml">
+
+	<!-- 백그라운드 이미지 -->
+
+	<ImageView id="background" fitHeight="684" fitWidth="1100"
+		pickOnBounds="true">
+		<image>
+			<Image url="images/Image_Edit.png" preserveRatio="true"
+				smooth="true" />
+		</image>
+	</ImageView>
+
+	<!-- 번호 텍스트필드 -->
+	<children>
+		<TextField layoutX="85" layoutY="145" prefHeight="25"
+			prefWidth="148" fx:id="s_number"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+
+	<!-- 매장구분 텍스트필드 -->
+	<children>
+		<TextField layoutX="350" layoutY="145" prefHeight="25"
+			prefWidth="148" fx:id="cb_s_DepartmentClassification"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+
+	<!-- 매장구분2 텍스트필드 -->
+	<children>
+		<TextField layoutX="85" layoutY="185" prefHeight="25"
+			prefWidth="148" fx:id="cb_s_DepartmentClassification2"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 매장명 텍스트필드 -->
+	<children>
+		<TextField layoutX="350" layoutY="185" prefHeight="25"
+			prefWidth="148" fx:id="txt_s_StoreName"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 브랜드명 텍스트필드 -->
+	<children>
+		<TextField layoutX="85" layoutY="225" prefHeight="25"
+			prefWidth="148" fx:id="txt_s_BrandName"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 매장위치 텍스트필드 -->
+	<children>
+		<TextField promptText="BrandName" layoutX="350"
+			layoutY="225" prefHeight="25" prefWidth="148"
+			fx:id="txt_s_StoreLocation"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 재질 텍스트필드 -->
+	<children>
+		<TextField layoutX="82" layoutY="367" prefHeight="25"
+			prefWidth="148" fx:id="txt_s_Material"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 비쥬얼사이즈 텍스트필드 -->
+	<children>
+		<TextField layoutX="350" layoutY="367" prefHeight="25"
+			prefWidth="148" fx:id="txt_s_VisualSize"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+
+	<!-- 업체명 텍스트필드 -->
+	<children>
+		<TextField layoutX="82" layoutY="515" prefHeight="25"
+			prefWidth="148" fx:id="txt_s_CompanyName"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 공사금액 텍스트필드 -->
+	<children>
+		<TextField layoutX="347" layoutY="514" prefHeight="25"
+			prefWidth="120" fx:id="txt_s_ConstructionAmount"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 영상여부 텍스트필드 -->
+	<children>
+		<TextField layoutX="82" layoutY="412" prefHeight="25"
+			prefWidth="120" fx:id="txt_s_Gender"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 입점날짜 데이터픽커 -->
+	<children>
+		<DatePicker layoutX="87" layoutY="272" prefHeight="25"
+			prefWidth="148" fx:id="txt_LocationDate">
+		</DatePicker>
+	</children>
+	<!-- 철수날짜 데이터픽커 -->
+	<children>
+		<DatePicker layoutX="352" layoutY="272" prefHeight="25"
+			prefWidth="150" fx:id="txt_WithdrawalDate">
+		</DatePicker>
+	</children>
+	
+	<!-- 이미지 라벨 -->
+	<Label text="이미지파일명 :" layoutX="530" layoutY="112" >
+		<font>
+			<Font size="13"/>
+		</font>
+	</Label>
+	<!-- 이미지 텍스트필드 -->
+	<children>
+		<TextField layoutX="620" layoutY="109" prefHeight="25"
+			prefWidth="250" fx:id="imageView">
+			<font>
+				<Font size="13" />
+			</font>
+		</TextField>
+	</children>
+
+
+	<!-- 이미지뷰(매장이미지) -->
+	<AnchorPane layoutX="530" layoutY="140" fx:id="imageBox2">
+	</AnchorPane>
+
+	<children>
+		<ImageView layoutX="530" layoutY="140" fx:id="imageView2"
+			fitWidth="516" fitHeight="310" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="images/ImageView2.jpg" />
+			</image>
+		</ImageView>
+	</children>
+
+	<!-- 이미지등록 버튼 -->
+	<children>
+		<Button layoutX="720" layoutY="600" fx:id="btn_StoreImage"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="27.388" fitWidth="140"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_s_StoreEdit.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+	<!-- 수정 버튼 -->
+	<children>
+		<Button layoutX="150" layoutY="600" fx:id="btn_s_Edit"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="27.388" fitWidth="89"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_s_Edit.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+	<!-- 닫기 버튼 -->
+	<children>
+		<Button layoutX="280" layoutY="599" fx:id="btn_s_Exit"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="28" fitWidth="92"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_s_Exit2.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+
+</AnchorPane>
+

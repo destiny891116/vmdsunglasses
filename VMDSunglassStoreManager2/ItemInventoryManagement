@@ -1,0 +1,74 @@
+create table ItemInventoryManagement(
+	I_number number(10) unique,
+	I_BrandName varchar2(50) not null,
+	I_SojipgiName varchar2(50) not null,
+	I_ModelName varchar2(50) not null,
+	I_Storage varchar2(50) not null,
+	I_QuantityOfWarehoused varchar2(50) not null,
+	I_Price varchar2(50) not null,
+	I_CompanyName varchar2(50) not null,
+	I_ReceivingDate date,
+	I_imageView varchar2(50) not null,
+	primary key(I_BrandName, I_SojipgiName, I_ModelName)
+);	
+
+create table ItemInventoryManagement(
+   I_number number(10) unique,
+   I_BrandName varchar2(50) not null,
+   I_SojipgiName varchar2(50) not null,
+   I_ModelName varchar2(50) not null,
+   I_Storage varchar2(50) not null,
+   I_QuantityOfWarehoused varchar2(50) not null,
+   I_Price varchar2(50) not null,
+   I_CompanyName varchar2(50) not null,
+   I_ReceivingDate date,
+   I_imageView varchar2(50) not null
+);   
+
+CREATE SEQUENCE ItemInventoryManagement_seq
+START WITH 0
+INCREMENT BY 1
+MAXVALUE 999999999
+MINVALUE 0
+NOCYCLE
+CACHE 2;
+
+create table Lcooperator(
+	L_Number number(10) unique,
+	L_Line varchar2(50) not null,
+	L_CompanyName varchar2(50) not null,
+	L_CorporateNumber varchar2(50) not null,
+	L_Address varchar2(50) not null,
+	L_PhoneNumber varchar2(50) not null,
+	L_FAXNumber varchar2(50) not null,
+	L_WebHard varchar2(50) not null,
+	L_Email varchar2(50) not null,
+	L_Director varchar2(50) not null,
+	L_Department varchar2(50) not null,
+	L_CellPhoneNumber varchar2(50) not null,
+	L_Director2 varchar2(50),
+	L_Department2 varchar2(50),
+	L_CellPhoneNumber2 varchar2(50),
+	L_Director3 varchar2(50),
+	L_Department3 varchar2(50),
+	L_CellPhoneNumber3 varchar2(50),
+	L_Director4 varchar2(50),
+	L_Department4 varchar2(50),
+	L_CellPhoneNumber4 varchar2(50),
+	L_Director5 varchar2(50),
+	L_Department5 varchar2(50),
+	L_CellPhoneNumber5 varchar2(50)
+);	
+	
+CREATE SEQUENCE Lcooperator_seq
+START WITH 0
+INCREMENT BY 1
+MAXVALUE 999999999
+MINVALUE 0
+NOCYCLE
+CACHE 2;
+	
+
+
+
+

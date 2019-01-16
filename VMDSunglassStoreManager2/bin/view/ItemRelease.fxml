@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.beans.*?> 
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+
+<AnchorPane prefHeight="624" prefWidth="335"
+	xmlns:fx="http://javafx.com/fxml">
+	<!-- 백그라운드 이미지 -->
+
+	<ImageView id="background" fitHeight="624" fitWidth="335"
+		pickOnBounds="true">
+		<image>
+			<Image url="images/Image_ReleaceView.png" preserveRatio="true"
+				smooth="true" />
+		</image>
+	</ImageView>
+
+	<!-- 넘버 텍스트필드 -->
+	<children>
+		<TextField layoutX="120" layoutY="135" prefHeight="25"
+			prefWidth="140" fx:id="I_number"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="16" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 브랜드명 텍스트필드 -->
+	<children>
+		<TextField layoutX="120" layoutY="198" prefHeight="25"
+			prefWidth="140" fx:id="txt_I_BrandName"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="16" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 집기명 텍스트필드 -->
+	<children>
+		<TextField layoutX="120" layoutY="261" prefHeight="25"
+			prefWidth="140" fx:id="txt_I_SojipgiName"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="16" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 모델명 텍스트필드 -->
+	<children>
+		<TextField layoutX="120" layoutY="324" prefHeight="25"
+			prefWidth="140" fx:id="txt_I_ModelName"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="16" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 출고매장명 텍스트필드 -->
+	<children>
+		<ComboBox promptText="선택" layoutX="122.5" layoutY="388"
+			prefHeight="36" prefWidth="154" fx:id="txt_I_StoreName">
+		</ComboBox>
+
+		<!-- <TextField layoutX="120" layoutY="387" prefHeight="25" prefWidth="140" 
+			fx:id="txt_I_StoreName" style="-fx-background-color: transparent;"> <font> 
+			<Font size="16" /> </font> </TextField> -->
+	</children>
+	<!-- 출고수량 텍스트필드 -->
+	<children>
+		<TextField layoutX="120" layoutY="450" prefHeight="25"
+			prefWidth="140" fx:id="txt_I_ForwardingQuantity"
+			style="-fx-background-color: transparent;">
+			<font>
+				<Font size="16" />
+			</font>
+		</TextField>
+	</children>
+	<!-- 출고일 데이터픽커 -->
+	<children>
+		<DatePicker layoutX="120" layoutY="513" prefHeight="33"
+			prefWidth="154" fx:id="txt_I_ReceivingDate">
+		</DatePicker>
+	</children>
+	<!-- 출고 버튼 -->
+	<children>
+		<Button layoutX="60" layoutY="570" fx:id="btn_I_Release"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="27.388" fitWidth="89"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_r_RAdd.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+	<!-- 닫기 버튼 -->
+	<children>
+		<Button layoutX="160" layoutY="570" fx:id="btn_r_Exit"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="27.388" fitWidth="89"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_s_Exit2.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+</AnchorPane>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.beans.*?> 
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+	prefHeight="642" prefWidth="622"
+	fx:controller="controller.VMDController">
+
+	<!-- 백그라운드 이미지 -->
+
+	<ImageView id="background" fitHeight="642" fitWidth="622"
+		pickOnBounds="true">
+		<image>
+			<Image url="images/Image_VMDManagement.png"
+				preserveRatio="true" smooth="true" />
+		</image>
+	</ImageView>
+
+	<!-- 이미지버튼 -->
+	<VBox>
+		<children>
+			<HBox>
+				<padding>
+					<Insets top="10" right="10" bottom="10" left="10" />
+				</padding>
+				<Button fx:id="btn_V_Exit" BorderPane.alignment="TOP_RIGHT"
+					prefHeight="24.0" prefWidth="24.0"
+					style="-fx-background-color: transparent;">
+					<graphic>
+						<ImageView fitHeight="35" fitWidth="35">
+							<Image url="images/btn_Exit2.png" />
+						</ImageView>
+					</graphic>
+				</Button>
+			</HBox>
+		</children>
+	</VBox>
+	<!-- 테이블 뷰! -->
+	<children>
+		<TableView layoutX="34" layoutY="150"
+			fx:id="tableView_VMDStock" prefHeight="436" prefWidth="555">
+		</TableView>
+	</children>
+	<!-- 수정 버튼 -->
+	<children>
+		<Button layoutX="210" layoutY="595" fx:id="btn_V_Edit"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="27.388" fitWidth="89"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_s_Edit.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+	<!-- 삭제 버튼 -->
+	<children>
+		<Button layoutX="310" layoutY="595" fx:id="btn_V_Delete"
+			style="-fx-background-color: transparent;">
+			<graphic>
+				<ImageView fitHeight="27.388" fitWidth="89"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="images/btn_s_Delete.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+
+</AnchorPane>
+

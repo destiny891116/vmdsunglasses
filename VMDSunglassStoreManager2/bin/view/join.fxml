@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="634" prefWidth="400"
+	xmlns:fx="http://javafx.com/fxml"
+	fx:controller="controller.JoinController">
+
+	<!-- 백그라운드 이미지 -->
+
+	<ImageView id="background" fitHeight="634.0" fitWidth="400.0"
+		pickOnBounds="true">
+		<image>
+			<Image url="images/Image_Join.jpg" preserveRatio="true"
+				smooth="true" />
+		</image>
+	</ImageView>
+
+	<!-- 화살표버튼 뒤로가기 -->
+	<VBox>
+		<children>
+			<HBox>
+				<padding>
+					<Insets top="10" right="10" bottom="10" left="10" />
+				</padding>
+				<Button fx:id="btn_m_Exit" BorderPane.alignment="TOP_RIGHT"
+					prefHeight="24.0" prefWidth="24.0"
+					style="-fx-background-color: transparent;">
+					<graphic>
+						<ImageView fitHeight="35" fitWidth="35">
+							<Image url="images/btn_l_Exit.png" />
+						</ImageView>
+					</graphic>
+				</Button>
+			</HBox>
+
+			<AnchorPane>
+				<!-- 아이디텍스트 -->
+				<children>
+					<TextField promptText="ID" layoutX="35" layoutY="71"
+						prefHeight="34.942" prefWidth="267.121" fx:id="txt_m_Id"
+						style="-fx-background-color: transparent;">
+						<font>
+							<Font size="15" />
+						</font>
+					</TextField>
+				</children>
+				<!-- 비밀번호 텍스트 -->
+				<children>
+					<PasswordField promptText="Password" layoutX="35"
+						layoutY="144" prefHeight="34.942" prefWidth="267.121"
+						fx:id="txt_m_Password" style="-fx-background-color: transparent;">
+						<font>
+							<Font size="15" />
+						</font>
+					</PasswordField>
+				</children>
+				<!-- 비밀번호 확인 텍스트 -->
+				<children>
+					<PasswordField promptText="Password Again"
+						layoutX="35" layoutY="215" prefHeight="34.942" prefWidth="267.121"
+						fx:id="txt_m_PasswordRepeat"
+						style="-fx-background-color: transparent;">
+						<font>
+							<Font size="15" />
+						</font>
+					</PasswordField>
+				</children>
+				<!-- 이름 텍스트 -->
+				<children>
+					<TextField promptText="Name" layoutX="35" layoutY="286"
+						prefHeight="34.942" prefWidth="267.121" fx:id="txt_m_Name"
+						style="-fx-background-color: transparent;">
+						<font>
+							<Font size="15" />
+						</font>
+					</TextField>
+				</children>
+				<!-- 직급 텍스트 -->
+				<children>
+					<TextField promptText="Position" layoutX="35"
+						layoutY="357" prefHeight="34.942" prefWidth="267.121"
+						fx:id="txt_m_Position" style="-fx-background-color: transparent;">
+						<font>
+							<Font size="15" />
+						</font>
+					</TextField>
+				</children>
+				<!-- 휴대전화번호 텍스트 -->
+				<children>
+					<TextField promptText="PhoneNumber" layoutX="35"
+						layoutY="427" prefHeight="34.942" prefWidth="267.121"
+						fx:id="txt_m_PhoneNumber"
+						style="-fx-background-color: transparent;">
+						<font>
+							<Font size="15" />
+						</font>
+					</TextField>
+				</children>
+
+
+				<!-- 중복확인 버튼 -->
+				<children>
+					<Button layoutX="288" layoutY="68" fx:id="btn_m_Check"
+						style="-fx-background-color: transparent;">
+						<graphic>
+							<ImageView fitHeight="78.038" fitWidth="77.05"
+								pickOnBounds="true" preserveRatio="true">
+								<image>
+									<Image url="images/btn_m_Check.jpg" />
+								</image>
+							</ImageView>
+						</graphic>
+					</Button>
+				</children>
+
+
+				<!-- 가입하기 버튼 -->
+				<children>
+					<Button layoutX="30" layoutY="480" fx:id="btn_m_Join"
+						style="-fx-background-color: transparent;">
+						<graphic>
+							<ImageView fitHeight="44.958" fitWidth="337.821"
+								pickOnBounds="true" preserveRatio="true">
+								<image>
+									<Image url="images/btn_m_Join.jpg" />
+								</image>
+							</ImageView>
+						</graphic>
+					</Button>
+				</children>
+			</AnchorPane>
+
+		</children>
+	</VBox>
+</AnchorPane>
+
